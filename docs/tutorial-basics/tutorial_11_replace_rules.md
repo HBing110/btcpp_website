@@ -96,8 +96,8 @@ int main(int argc, char** argv)
   // a "dummy" node, that we want to substitute to a given one.
 
   // Simple node that just prints its name and return SUCCESS
-  factory.registerSimpleAction("DummyAction", [](BT::TreeNode& self){
-    std::cout << "DummyAction substituting: "<< self.name() << std::endl;
+  factory.registerSimpleAction("TestAction", [](BT::TreeNode& self){
+    std::cout << "TestAction substituting: "<< self.name() << std::endl;
     return BT::NodeStatus::SUCCESS;
   });
 
